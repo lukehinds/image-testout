@@ -39,6 +39,7 @@ jobs:
           tags: |
             type=semver,pattern=v{{version}}
             type=semver,pattern=v{{major}}
+            type=semver,pattern=v{{major}}.{{minor}}
             type=raw,value=latest
 
       - name: Build and push
